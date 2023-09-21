@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataBase</title>
+    <style>
+      h1 {
+        text-align: center;
+        border-bottom: 1px solid;
+      }
+      tr,
+      td,
+      th {
+        padding: 0.5%;
+      }
+      hr {
+        border-bottom: 1px dashed;
+        margin-top: 2%;
+      }
+      #main-body {
+        margin: 3%;
+      }
+      body {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (min-width: 360px) and (max-width: 740px) {
+        #main-body {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-body">
+      <h1>DATABASE</h1>
+      <h4>Q.1 What is Database?</h4>
+      <p>
+        A database is a structured and organized collection of data that is
+        stored electronically. It is designed to efficiently store, retrieve,
+        and manage information. Databases are used in various applications and
+        industries to store, organize, and manipulate data for purposes such as
+        data analysis, reporting, and decision-making.
+      </p>
+
+      <hr />
+
+      <h4>Q.2 Types of Databases</h4>
+      <dl>
+        <dt>1. Relational Database :</dt>
+        <dd>In this, the data is stored in a table of rows and columns</dd>
+
+        <dt>2. Object Oriented Databases :</dt>
+        <dd>In this, the data is stored in form of objects.</dd>
+
+        <dt>3. NoSQL database :</dt>
+        <dd>
+          It allows to store the data which is unstructured or semistructured.
+        </dd>
+
+        <dt>4. Graph database :</dt>
+        <dd>
+          The data gets stored in the form of entities and the relationship
+          between them.
+        </dd>
+      </dl>
+
+      <hr />
+
+      <h4>Q.3 Difference between Relational and Non-Relational Database</h4>
+      <table border="1">
+        <tr>
+          <th>S.No</th>
+          <th>Relational Database</th>
+          <th>Non-Relational Database</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td>Data is organized like tables with rows and columns.</td>
+          <td>
+            Data is stored in flexible formats, like documents, key-value pairs,
+            or graphs.
+          </td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>
+            You must define the structure of your data (schema) before storing
+            it.
+          </td>
+          <td>
+            No fixed schema, allowing you to change data structure easily.
+          </td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>
+            Ideal for structured data, like financial systems, e-commerce.
+          </td>
+          <td>
+            Ideal for unstructured or rapidly changing data, like social media
+            or IoT.
+          </td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>They are vertically scalable.</td>
+          <td>They are horizontally scalable.</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>It is used to handle data coming in low velocity.</td>
+          <td>It is used to handle data coming in high velocity.</td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td>Examples: MySQL, PostgreSQL, Oracle, MS-SQL Server, etc</td>
+          <td>
+            Examples: MongoDB, GraphQL, HBase, Neo4j, Cassandra, Amazon DynamoDB
+            etc
+          </td>
+        </tr>
+      </table>
+
+      <h4>Q.4 Difference between SQL and NoSQL</h4>
+      <table border="1">
+        <tr>
+          <th>S.No</th>
+          <th>SQL(Structured Query Language )</th>
+          <th>NoSQL</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td>It is a Relational Database(RDBMS).</td>
+          <td>It is a Non-Relational or distributed Database</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>
+            These databases have fixed and predefined schemas( Means when any
+            data is getting stored, it must follow the schema).
+          </td>
+          <td>
+            They have dynamic schema.( Each data object is having its own
+            schema.)
+          </td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>
+            These databases are not suited for hierarchical data storage(means
+            tree like structure).
+          </td>
+          <td>
+            It is best for the hierarchical structure (You can add as many child
+            elements).
+          </td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>They are vertically scalable.</td>
+          <td>They are horizontally scalable.</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>These databases are best suited for complex queries.</td>
+          <td>These databases are not so good for complex queries</td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td>Examples: MySQL, PostgreSQL, Oracle, MS-SQL Server, etc</td>
+          <td>
+            Examples: MongoDB, GraphQL, HBase, Neo4j, Cassandra, Amazon DynamoDB
+            etc
+          </td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <h4>Q.5 What is MongoDB?</h4>
+      <ul>
+        <li>
+          MongoDB is a popular open-source document-oriented NoSQL database
+          management system that is designed to store and manage unstructured or
+          semi-structured data.
+        </li>
+        <li>It works on the concept of Collections and documents.</li>
+        <li>
+          <b>Collections: </b> A collection is a group of MongoDB documents. We
+          can have multiple collections in a single database. You can consider
+          these collections are like tables that we have in relational databases
+        </li>
+        <li>
+          <b>Documents: </b>A document is a set of key-value pairs. These
+          documents can have dynamic schema which means that data present in
+          same document need not to have the same set of fields or structure
+          just because they belong to same collection.
+        </li>
+        <li>
+          Value can be any datatype. Some of them are String, Number, Boolean,
+          Arrays, Timestamp, Object, Null, Date, Object ID
+        </li>
+      </ul>
+      <img src="./img1.png" alt="" width="40%" />
+
+      <hr />
+
+      <h4>Q.6 In what way mongoDb is better than MySQL??</h4>
+      <p>
+        Compared to MySQL, MongoDB is easier to work with. Since there is no
+        need to define schemas.As, MongoDB can store large amounts of
+        unstructured data much faster than MySQL. It follows a document-based
+        storage approach means MongoDB stores data in a single document for an
+        entity and helps in faster data read or write.
+      </p>
+
+      <hr />
+
+      <h4>
+        Q.7 What kind of databse is mongoDb? or Which format do you use in
+        MongoDB?
+      </h4>
+      <p>mongoDb is a document-oriented NoSQL Database.</p>
+
+      <hr />
+
+      <h4>
+        Q.8 What is the command to sort the data in asceding and descending order in mongoDb?</h4>
+
+      <p>Descending Order: db.collectionName.find().sort({ fieldName: -1 }); <br>
+        Ascending Order : db.collectionName.find().sort({ fieldName: 1 });
+      </p>
+
+      <hr/>
+
+      <h4>Q.9 How to truncate primary key foriegn key in mongoDb?</h4>
+      <p>In MongoDB, you don't have the concept of "truncate" for primary keys (referred to as "_id" by default) or foreign keys like you do in traditional relational databases.</p>
+      <dl>
+        <dt>1. Remove All Documents from a Collection:</dt>
+        <dd>db.collectionName.deleteMany({});
+        </dd>
+
+        <dt>2. Remove Documents Based on a Filter:</dt>
+        <dd>db.collectionName.deleteMany({ field: value });</dd>
+
+
+        <dt>3. Delete the entire collection:</dt>
+        <dd>db.collectionName.drop();</dd>
+      </dl>
+
+
+
+      <h4>Q.10 What is Mongoose ? Why do we use it?</h4>
+      <p>Mongoose is an Object Data Modeling (ODM) library for Node.js and MongoDB. It simplifies interaction with MongoDB databases by providing a schema-based abstraction.
+          <br><br>
+          We use it bcz it enables Schema Definiton, provides built-in validation and intregate with Promises and async & await for asynchronous operation.
+      </p>
+
+
+      <h4>Q.11 What is RDBMS?</h4>
+      <p>RDBMS stands for Relational Database Management System. It organizes data into row and columns which collectively form a table.</p>
+ 
+      <hr>
+
+      <h4>What is Schema?</h4>
+      <p>A schema in the context of databases is a blueprint or structure that defines how data is organized within a database system</p>
+
+      <hr>
+    </div>
+  </body>
+</html>
